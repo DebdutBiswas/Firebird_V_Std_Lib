@@ -52,32 +52,32 @@ void left_position_encoder_interrupt_init (void);
 void right_position_encoder_interrupt_init (void);
 
 //Distance and Angle calculation upon encoders interrupt
-void cal_distance(unsigned long int req_distance);
-void cal_angle(unsigned long int req_angle);
+void cal_distance(unsigned long int);
+void cal_angle(unsigned long int);
 
 //Speed control and motion data passing
-void speed_control(int left_motor_speed, int right_motor_speed);
-void motion_direction(unsigned char direction);
+void speed_control(int, int);
+void motion_direction(unsigned char);
 
 //Linear Motion Functions
-void forward_mm(unsigned int speed, unsigned int distance);
-void backward_mm(unsigned int speed, unsigned int distance);
+void forward_mm(unsigned int, unsigned int);
+void backward_mm(unsigned int, unsigned int);
 
 //Circular Motion Functions
-void circular_forward(unsigned int l_speed,unsigned int r_speed);
-void circular_backward(unsigned int l_speed, unsigned int r_speed);
+void circular_forward(unsigned int, unsigned int);
+void circular_backward(unsigned int, unsigned int);
 
 //Angular Forward Motion Functions
-void left(unsigned int speed, unsigned int angle);
-void right(unsigned int speed, unsigned int angle);
+void left(unsigned int, unsigned int);
+void right(unsigned int, unsigned int);
 
 //Angular Soft Forward Motion Functions
-void forward_soft_left(unsigned int speed, unsigned int angle);
-void forward_soft_right(unsigned int speed, unsigned int angle);
+void forward_soft_left(unsigned int, unsigned int);
+void forward_soft_right(unsigned int, unsigned int);
 
 //Angular Soft Backward Motion Functions
-void backward_soft_left(unsigned int speed, unsigned int angle);
-void backward_soft_right(unsigned int speed, unsigned int angle);
+void backward_soft_left(unsigned int, unsigned int);
+void backward_soft_right(unsigned int, unsigned int);
 
 //Stop Bot Function
 void stop(void);
