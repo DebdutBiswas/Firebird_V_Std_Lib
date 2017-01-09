@@ -48,8 +48,8 @@ void init_encoders(void);
 void timer5_int(void);
 
 //Interrupt initialization for left and right encoders
-void left_position_encoder_interrupt_init (void);
-void right_position_encoder_interrupt_init (void);
+void left_position_encoder_interrupt_init(void);
+void right_position_encoder_interrupt_init(void);
 
 //Distance and Angle calculation upon encoders interrupt
 void cal_distance(unsigned long int);
