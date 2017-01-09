@@ -62,7 +62,7 @@ void init_sensor_ports(void);
 void init_adc();
 
 //Function for ADC Conversion
-unsigned char ADC_Conversion(unsigned char Ch);
+unsigned char ADC_Conversion(unsigned char);
 
 //Functions for update sensors data
 void update_btv_sensor();
